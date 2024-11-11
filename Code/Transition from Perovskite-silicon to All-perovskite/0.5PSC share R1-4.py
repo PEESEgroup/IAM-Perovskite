@@ -9,7 +9,7 @@ import math
 
 #### This Program is for SSP2-BASE-3.5℃ to 2050 ####
 
-share = 0.25  # Share
+share = 0.5  # Share
 
 xh = []; yh = []  ## Array for storing data
 f = open('GLO PV 3.5.txt', 'r')  # Open the txt file

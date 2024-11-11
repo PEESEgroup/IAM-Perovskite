@@ -9,7 +9,7 @@ import math
 
 #### This Program is for SSP2-BASE-3.5℃ to 2050 ####
 
-share = 0.25  # Share
+share = 0.5  # Share
 
 xh = []; yh = []  ## Array for storing data
 f = open('GLO PV 3.5.txt', 'r')  # Open the txt file
@@ -66,65 +66,65 @@ def R_B(T):
 region = 0
 while region < 4:
     
-    if region == 0:
-        print("China")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('China SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==0:
+        print("C.Eu")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('C.EU SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
             return dHcata1(T)
 
         
-    if region == 1:
-        print("India")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('India SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==1:
+        print("Canada")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('Canada SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
-            return dHcata1(T)
+            return dHcata1(T)#这一段是实
 
         
-    if region == 2:
-        print("USA")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('USA SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==2:
+        print("E.AFRICA")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('E.Africa SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
             return dHcata1(T)
 
-    if region == 3:
-        print("Brazil")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('Brazil SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==3:
+        print("Indonesia")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('Indonesia SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
             return dHcata1(T)
         

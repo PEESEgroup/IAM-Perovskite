@@ -64,67 +64,81 @@ def R_B(T):
     return dHcata4(T)
 
 region = 0
-while region < 4:
+while region < 5:
     
-    if region == 0:
-        print("China")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('China SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==0:
+        print("Oceania")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('Oceania SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
             return dHcata1(T)
 
         
-    if region == 1:
-        print("India")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('India SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==1:
+        print("SE.Asia")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('SE.Asia SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
             return dHcata1(T)
 
         
-    if region == 2:
-        print("USA")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('USA SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==2:
+        print("Turkey")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('Turkey SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
             return dHcata1(T)
 
-    if region == 3:
-        print("Brazil")
-        xh1 = []; yh1 = []  ###### Similar functionality as above
-        f = open('Brazil SSP2 3.5 SI.txt', 'r')
-        line = f.readline()
+    if region==3:
+        print("W.EU")
+        xh1=[]; yh1=[]####### Similar functionality as above
+        f=open('W.EU SSP2 3.5 SI.txt','r')
+        line=f.readline()
         while line:
-            arr = line.split()
+            arr=line.split()
             xh1.append(float(arr[0]))
             yh1.append(float(arr[1]))
-            line = f.readline()
+            line=f.readline()
         f.close()
-        dHcata1 = interp1d(xh1, yh1)
+        dHcata1=interp1d(xh1,yh1)
+        def dchinasi(T):
+            return dHcata1(T)
+    if region==4:
+        print("ROW")
+        xh1=[]; yh1=[]###### Similar functionality as above
+        f=open('ROW SSP2 3.5 SI.txt','r')
+        line=f.readline()
+        while line:
+            arr=line.split()
+            xh1.append(float(arr[0]))
+            yh1.append(float(arr[1]))
+            line=f.readline()
+        f.close()
+        dHcata1=interp1d(xh1,yh1)
         def dchinasi(T):
             return dHcata1(T)
         
