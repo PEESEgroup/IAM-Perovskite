@@ -1,24 +1,25 @@
 # IAM-Perovskite
 
-### Overall Use Instructions
+### 1. Overall Use Instructions
 This repository was prepared for the analysis of perovskite tandem PV development, incorporating spatiotemporal characteristics.
 
-#### 1. Future Scenarios:
+#### - Future Scenarios:
 
 - The **IMAGE 3.2 model** was selected as the primary source of Integrated Assessment Model (IAM) scenarios.
 - The **Premise tool** was used to integrate IAM scenario information into the Life Cycle Assessment (LCA) database.
 LCA Database:
 
-#### 2. LCA Databse:
+#### - LCA Databse:
 The baseline LCA database is based on Ecoinvent 3.8.
 Subsequent LCA analyses were conducted **using the IAM-enhanced LCA databases generated with Premise, Python, and Brightway**.
 Database Features:
 
-#### 3. Database Features:
+#### - Database Features:
 The generated databases incorporate temporal (year-specific) and regional characteristics, facilitating comprehensive analyses about the production of PV modules.
 
-### Section Descriptions:
-#### 1. Code
+
+### 2. Section Descriptions:
+#### - Code
 This section provides the code for integrating IAM scenarios with the LCA database using Premise and Brightway.
 Key features of the code include:
 - Integration of IAM and LCA
@@ -34,7 +35,7 @@ Key features of the code include:
   
 This section is designed to provide flexible modeling options, reflecting various market adoption pathways and technological transition speeds.
 
-#### 2. Data
+#### - Data
 
 We present the main data underlying the results of this study, including annual carbon emission outcomes under both long-lifetime and short-lifetime scenarios, with varying perovskite tandem shares. Our analysis considers the differences in outcomes resulting from fast and slow transitions to all-perovskite tandem photovoltaics, as well as the impact of lifetime evolution patterns.
 
@@ -42,11 +43,11 @@ In addition, we provide the corresponding changes in material demand, covering k
 
 As the foundation for these industry-level results, we also share the unit emission results, which were derived from analyses based on the updated Ecoinvent database integrated with IAM information. These results include LCA outcomes across different years. The tools used for these analyses are listed in the section below.
 
-#### 3. Map
+#### - Map
 
 In the Map section, we provide the files used to construct the relevant maps. The data utilized for map construction is stored in the Data section, and the tools employed for this purpose are listed below.
 
-### Tool Utilization:
+### 3. Tool Utilization:
 
 Python 3.8 or higher
 
